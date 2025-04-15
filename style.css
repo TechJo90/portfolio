@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap"); /* Using Arvo as I couldn't find Arlo */
+
+:root {
+  --terracotta: #e07a5f;
+  --coffee: #6f4e37;
+  --background: #fff8f0;
+  --light-terracotta: #f2c6b4;
+  --dark-coffee: #3c2a1e;
+}
+
+body {
+  font-family: "Arvo", serif;
+  color: var(--coffee);
+  background-color: var(--background);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--terracotta);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid var(--light-terracotta);
+  padding-bottom: 0.2em;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p {
+  margin-bottom: 1.2em;
+}
+
+a {
+  color: var(--dark-coffee);
+  text-decoration: none;
+  border-bottom: 1px solid var(--light-terracotta);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--terracotta);
+  border-bottom: 1px solid var(--terracotta);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  background-color: var(--terracotta);
+  color: white;
+  padding: 0.5em 1.5em;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--dark-coffee);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-terracotta {
+  color: var(--terracotta);
+}
+
+.text-coffee {
+  color: var(--coffee);
+}
+
+.bg-light {
+  background-color: var(--background);
+}
