@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozy Coder</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Raleway:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Raleway", sans-serif;
+        font-weight: 200;
+        color: #6f4e37;
+        line-height: 1.6;
+      }
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      header {
+        background-color: #f9f9f9;
+        padding: 20px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        font-family: "Arvo", serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #e2725b;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+      .nav-links li {
+        margin-left: 25px;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: #6f4e37;
+        font-weight: 300;
+        transition: all 0.3s ease;
+      }
+      .nav-links a:hover {
+        color: #e2725b;
+      }
+      .hero {
+        padding: 100px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .hero-content {
+        width: 50%;
+      }
+      .hero-image {
+        width: 45%;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      .hero-image svg {
+        width: 100%;
+        height: auto;
+      }
+      h1 {
+        font-family: "Arvo", serif;
+        font-size: 48px;
+        margin-bottom: 20px;
+        color: #e2725b;
+        line-height: 1.2;
+      }
+      p {
+        margin-bottom: 30px;
+        font-size: 18px;
+      }
+      .btn {
+        display: inline-block;
+        background-color: #e2725b;
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-weight: 300;
+        padding: 12px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      .btn:hover {
+        background-color: #c65e47;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(226, 114, 91, 0.4);
+      }
+      @media (max-width: 768px) {
+        .hero {
+          flex-direction: column-reverse;
+          text-align: center;
+          padding: 60px 0;
+        }
+        .hero-content,
+        .hero-image {
+          width: 100%;
+        }
+        .hero-content {
+          margin-top: 40px;
+        }
+        h1 {
+          font-size: 36px;
+        }
+        .nav-links {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            Cozy Coder
+            <i data-lucide="coffee" style="color: #e2725b"></i>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>WHATUP DOE!</h1>
+          <p>
+            My name is Jo Sesay, better known as the Cozy Coder. Feel free to
+            reach out for collab opportunities.
+          </p>
+          <a href="#" class="btn">Contact</a>
+        </div>
+        <div class="hero-image">
+          <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="500" height="400" fill="#f9f9f9" />
+
+            <g transform="translate(120, 180)">
+              <!-- Laptop Screen -->
+              <rect
+                x="0"
+                y="0"
+                width="240"
+                height="160"
+                rx="5"
+                ry="5"
+                fill="#333"
+              />
+              <rect
+                x="5"
+                y="5"
+                width="230"
+                height="150"
+                rx="2"
+                ry="2"
+                fill="#1E1E1E"
+              />
+
+              <rect
+                x="15"
+                y="15"
+                width="40"
+                height="5"
+                fill="#E2725B"
+                opacity="0.8"
+              />
+              <rect
+                x="15"
+                y="25"
+                width="120"
+                height="5"
+                fill="#6F4E37"
+                opacity="0.5"
+              />
+              <rect
+                x="15"
+                y="35"
+                width="90"
+                height="5"
+                fill="#6F4E37"
+                opacity="0.5"
+              />
+              <rect
+                x="30"
+                y="45"
+                width="140"
+                height="5"
+                fill="#6F4E37"
+                opacity="0.5"
+              />
+              <rect
+                x="30"
+                y="55"
+                width="80"
+                height="5"
+                fill="#E2725B"
+                opacity="0.8"
+              />
+              <rect
+                x="15"
+                y="65"
+                width="160"
+                height="5"
+                fill="#6F4E37"
+                opacity="0.5"
+              />
+              <rect
+                x="15"
+                y="85"
+                width="60"
+                height="5"
+                fill="#E2725B"
+                opacity="0.8"
+              />
+              <rect
+                x="15"
+                y="95"
+                width="180"
+                height="5"
+                fill="#6F4E37"
+                opacity="0.5"
+              />
+              <rect
+                x="15"
+                y="105"
+                width="140"
+                height="5"
+                fill="#6F4E37"
+                opacity="0.5"
+              />
+              <rect
+                x="15"
+                y="115"
+                width="70"
+                height="5"
+                fill="#E2725B"
+                opacity="0.8"
+              />
+
+              <!-- Laptop Base -->
+              <path d="M0,160 L-15,180 L255,180 L240,160 Z" fill="#444" />
+              <rect
+                x="105"
+                y="168"
+                width="30"
+                height="5"
+                rx="2"
+                ry="2"
+                fill="#333"
+              />
+            </g>
+
+            <!-- Coffee Cup -->
+            <g transform="translate(320, 250)">
+              <!-- Cup body -->
+              <path
+                d="M0,0 Q0,-60 40,-60 L70,-60 Q110,-60 110,0 L110,60 Q110,70 100,70 L10,70 Q0,70 0,60 Z"
+                fill="#E2725B"
+              />
+
+              <!-- Cup inner -->
+              <path
+                d="M10,0 Q10,-50 40,-50 L70,-50 Q100,-50 100,0 L100,60 Q100,60 95,60 L15,60 Q10,60 10,60 Z"
+                fill="#6F4E37"
+              />
+
+              <!-- Cup handle -->
+              <path
+                d="M110,10 Q130,10 130,30 L130,40 Q130,60 110,60"
+                fill="none"
+                stroke="#E2725B"
+                stroke-width="8"
+                stroke-linecap="round"
+              />
+
+              <path
+                d="M40,-65 Q50,-85 60,-70 Q70,-90 80,-75 Q90,-95 100,-80"
+                fill="none"
+                stroke="#6F4E37"
+                stroke-width="3"
+                stroke-linecap="round"
+                opacity="0.6"
+              >
+                <animate
+                  attributeName="d"
+                  values="M40,-65 Q50,-85 60,-70 Q70,-90 80,-75 Q90,-95 100,-80;
+                               M40,-65 Q50,-80 60,-75 Q70,-95 80,-70 Q90,-90 100,-80;
+                               M40,-65 Q50,-85 60,-70 Q70,-90 80,-75 Q90,-95 100,-80"
+                  dur="4s"
+                  repeatCount="indefinite"
+                />
+              </path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
