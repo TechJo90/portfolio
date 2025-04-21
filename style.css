@@ -174,7 +174,7 @@ nav ul li a:hover::after {
   border: 3px solid var(--primary-color);
 }
 
-/* Projects Section */
+
 .projects {
   padding: 100px 0;
   background-color: var(--terracotta-light);
